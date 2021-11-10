@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediterraneO_theband</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   
+</head>
+<body>
+ 
+<header class="header clearfix">
+    <a><img src="https://res.cloudinary.com/rbuono70/image/upload/c_scale,h_28/v1636325688/Foto%20sito%20prova/Mediterraneo/LOGO_1_axxmew.png" class="header__logo" alt="logo"></a>
+    <a href="" class="header__icon-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <ul class="header__menu animate">
+        <li class="header__menu__item"><a href="">Home</a></li>
+        <li class="header__menu__item"><a href="">Chi siamo</a></li>
+        <li class="header__menu__item"><a href="">Concerti</a></li>
+        <li class="header__menu__item"><a href="">Gallery</a></li>
+        
+
+    </ul>
+</header>     
+
+
+    <section class="cover">
+        <div class="cover__filter"></div>
+        <div class="logone"></div>
+        <div class="cover__caption"></div>
+            <div class="cover__caption__copy"></div>
+                <h1>STIAMO TORNANDO</h1>
+        
+    </section>
+
+
+
+<script src="https://ajax.googleapis.com/apax/libs/jquery/3.6.0/jquery.min.js"></script>    
+<script>
+$(document).ready(function(){
+    $(".header__icon-bar").click(function(e){
+
+        $(".header__menu").toggleClass('is-open');
+        e.preventDefault();
+    })
+});
+
+</script>
+
+
+</body>
+</html>
