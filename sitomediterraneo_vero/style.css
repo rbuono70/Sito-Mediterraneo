@@ -1,7 +1,7 @@
 
 html, body{height: 100%;}
 body{background: rgb(202, 195, 195);}
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 .animate{
   -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -58,8 +58,8 @@ body{background: rgb(202, 195, 195);}
   position: relative;
   z-index: 1;
 }
-
-
+.storia{height: auto; width: 80%; display: ; margin: 10px auto; border: 10px rgb(230, 16, 16) solid; border-radius: 5mm; }
+.storia__scritto{width 50%; margin:30px; font-family: 'Lato', sans-serif; font-size: 20px;line-height: 40px;}
 
 
 /*--------------------------------
