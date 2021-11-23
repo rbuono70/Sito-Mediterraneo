@@ -47,19 +47,24 @@ body{background: rgb(202, 195, 195);}
     text-align: center;
     color: #fff;
   }
+  .logo_fb{
+    position: absolute;
+   height: 6%; width: 15%; top: 85%; right: 1%; border: red solid 1px ;
+  }
 
 
-.logone{height: 100%; 
-  background-image: url(https://res.cloudinary.com/rbuono70/image/upload/v1636325688/Foto%20sito%20prova/Mediterraneo/LOGO_1_axxmew.png)
-  ;
+
+  .logone {height: 100%; 
+  background-image: url(https://res.cloudinary.com/rbuono70/image/upload/v1636325688/Foto%20sito%20prova/Mediterraneo/LOGO_1_axxmew.png);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 40%;
   position: relative;
   z-index: 1;
 }
-.storia{height: auto; width: 80%; display: ; margin: 10px auto; border: 10px rgb(230, 16, 16) solid; border-radius: 5mm; }
-.storia__scritto{width 50%; margin:30px; font-family: 'Lato', sans-serif; font-size: 20px;line-height: 40px;}
+
+.storia{height: auto; width: 80%; display: flex; margin: 20px auto; border: 10px rgb(230, 16, 16) solid; border-radius: 5mm; }
+.storia__scritto{margin: 30px; font-family: 'Lato', sans-serif; font-size: 20px; line-height: 40px;}
 
 
 /*--------------------------------
