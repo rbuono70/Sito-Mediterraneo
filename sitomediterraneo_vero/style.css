@@ -28,6 +28,7 @@ body{background: rgb(202, 195, 195);}
 
 .cover__filter{background:#000;
   width: 100%; height: 100%; 
+  border: radius 5mm;
   background-position-x: center; 
   background-position-y:top;
   z-index: 0; 
@@ -47,21 +48,75 @@ body{background: rgb(202, 195, 195);}
     text-align: center;
     color: #fff;
   }
-  .logo_fb{
-    position: absolute;
-   height: 6%; width: 15%; top: 85%; right: 1%; border: red solid 1px ;
+
+  .logone {height: 90%; 
+    background-image: url(https://res.cloudinary.com/rbuono70/image/upload/c_scale,h_120/v1636325688/Foto%20sito%20prova/Mediterraneo/LOGO_1_axxmew.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 45%;
+    position: relative;
+    z-index: 1;
   }
-
-
-
-  .logone {height: 100%; 
-  background-image: url(https://res.cloudinary.com/rbuono70/image/upload/v1636325688/Foto%20sito%20prova/Mediterraneo/LOGO_1_axxmew.png);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 40%;
-  position: relative;
-  z-index: 1;
+  
+.logo_fb{
+  position: absolute; 
+  height: 6%; 
+  width: 15%; 
+  top: 90%; 
+  right: 3%;
 }
+
+.logo_fb ul {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}  
+
+.logo_fb ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.logo_fb ul li .fa {
+  font-size: 20px;
+  line-height: 35px;
+  transition: .6s;
+  color: #000
+}
+.logo_fb ul li a {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(141, 138, 138, 0.5);
+
+}
+.logo_fb ul li a:hover {
+  transform: translate(0, -10px);
+}
+
+.logo_fb ul li:nth-child(1) a:hover {
+  background-color: #3b5998;
+}
+
+.logo_fb ul li:nth-child(2) a:hover {
+background-color: #f46f30;
+}
+
+.logo_fb ul li:nth-child(3) a:hover {
+background-color: #1da1f2;
+}
+
+
+
 
 .storia{height: auto; width: 80%; display: flex; margin: 20px auto; border: 10px rgb(230, 16, 16) solid; border-radius: 5mm; }
 .storia__scritto{margin: 30px; font-family: 'Lato', sans-serif; font-size: 20px; line-height: 40px;}
@@ -84,7 +139,12 @@ smartphone
 .header__menu__item{display: block;}
 .header__menu{width: 100%; height: 0px; padding-right: 0; overflow: hidden;}
 .is-open{height: 200px; overflow: auto;}
-/*.cover{display: block;}*/
+.cover{display: block;}
+.logone{background-image: url(https://res.cloudinary.com/rbuono70/image/upload/c_scale,h_80/v1636325688/Foto%20sito%20prova/Mediterraneo/LOGO_1_axxmew.png);
+
+}
+.logo_fb{position: absolute; height: 6%; width: 15%; top: 13%; left: 4em; z-index: 3;
+}
 }
 
 
@@ -99,5 +159,14 @@ smartphone
     clear: both;
     height: 0;
   }
-  * html .clearfix             { zoom: 1; } /* IE6 */
-  *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /*  IE7 */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  }
